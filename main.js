@@ -7,25 +7,54 @@
 // ==========================================================================
 
 // 1. Declare a variable whose value is an empty Array. Use any method you choose to add at least 4 items to it.
+var resorts = [];
+var resorts = ['Jackson Hole', 'Aspen', 'CB', 'A-basin'];
+
 
 //console.log("Question 1");
 //console.log(yourAnswer);
+console.log(resorts);
+//["Jackson Hole", "Aspen", "CB", "A-basin"]
 
 
 // 2. Add an additional item to the beginning of your Array.
+var resorts = ['Jackson Hole', 'Aspen', 'CB', 'A-basin'];
+resorts.unshift('Copper');
+//5
+console.log(resorts);
+//["Copper", "Jackson Hole", "Aspen", "CB", "A-basin"]
 
 // 3. Remove the second and third items.
+resorts.splice(1, 2);
+//["Jackson Hole", "Aspen"]
+console.log(resorts);
+//["Copper", "CB" "A-basin"]
 
 // 4. Add two new items after the second item.
+resorts.splice(2, 0, "Winter-Park", "Steamboat");
+//[]
+console.log(resorts);
+//["Copper", "CB", "Winter-Park", "Steamboat", "A-Basin"]
 
-// 5. Write 'The current length of the array is....' using the .length method
+// 5. Write 'The current length of the array is....' using the .length method  (?)
+resorts.length
+//5
+document.write("<p>The current length of the array is "+ length +" </p>"); 
+//The current length of an array is 0
 
 // Use the following Array for questions 6-11:
 var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+console.log(things);
+//["mug", "book", "mouse", "plant", "sunglasses"]
 
 // 6. Change 'mouse' to 'keyboard'
+things[2] = "keyboard";
+console.log(things);
+//["mug", "book", "keyboard", "plant", "sunglasses"]
 
 // 7. Combine all of the elements of the array into a string.
+things.toString();
+//"mug,book,keyboard,plant,sunglasses"
 
 // 8. Declare a variable called lastItem whose using .pop() Add two new items to lastItem, on at the beginning and one at the end.
 
