@@ -34,7 +34,7 @@ console.log(resorts);
 resorts.splice(2, 0, "Winter-Park", "Steamboat");
 //[]
 console.log(resorts);
-//["Copper", "CB", "A-basin", "Winter-Park", "Steamboat"]
+//["Copper", "CB", "Winter-Park", "Steamboat", "A-basin"]
 
 // 5. Write 'The current length of the array is....' using the .length method  
 resorts.length
